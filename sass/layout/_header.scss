@@ -1,0 +1,38 @@
+.header{
+    position: absolute;
+    padding: 50px 55px;
+    z-index: 999;
+}
+.header__nav{
+    display: flex;
+    align-items: center;
+}
+.header__logo{
+margin-right: 197px;
+}
+.site-nav{
+display: flex;
+
+list-style: none;
+}
+.site-nav__item{
+&:not(:last-child) {
+        margin-right: 65px;
+    }
+}
+.site-nav__link{
+    display: block;
+
+        font-size: 24px;
+        line-height: 1.9;
+        color: inherit;
+text-decoration: none;
+
+&:hover,
+&:focus{
+    background: linear-gradient(180deg, #1B18F9 0%, #1B18F9 46.35%, #E146AD 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+}
