@@ -1,5 +1,7 @@
 .hero{
     position: relative;
+    width: 100vw;
+    height: 100vh;
 }
 .hero__container::before {
     content: '';
@@ -8,8 +10,8 @@
     left: 0;
     z-index: -1;
 
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 
     background-image: url('../images/bg-right-graphic1.png');
     background-position: top right;
@@ -23,8 +25,8 @@
     left: 0;
     z-index: -1;
 
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 
     background-image: url('../images/bg-left-graphic1.png');
         background-position: bottom left;
@@ -100,39 +102,72 @@ display: flex;
 .icon-crab {
     position: absolute;
     top: 25%;
-    transform: translateX(-30%) rotate(0deg);    
-    animation: crabAnimRotate 5s ease-in-out 3s infinite;
-    //  crab 5s ease-in-out 5s infinite;
+    opacity: 1;
+    transform: translate(-30%, 0) rotate(0deg);    
+    animation: crabAnimRotate 15s ease-in-out 3s infinite;
 }
 @keyframes crabAnimRotate {
     0%{
-        transform: translateX(-30%) rotate(0deg);
+        transform: translate(-30%, 0) rotate(0deg);
+        opacity: 1;
+    }
+    10%{
+        transform: translate(-30%, 0) rotate(45deg);
+        opacity: 1;
     }
     20%{
-        transform: translateX(-30%) rotate(45deg);
+        transform: translate(-30%, 0) rotate(30deg);
+        opacity: 1;
+    }
+    30%{
+        transform: translate(-30%, 0) rotate(70deg);
+        opacity: 1;
     }
     40%{
-        transform: translateX(-30%) rotate(30deg);
+        transform: translate(-30%, 0) rotate(55deg);
+        opacity: 1;
     }
-    60%{
-        transform: translateX(-30%) rotate(70deg);
+    50%{ 
+        transform: translate(-30%, 0) rotate(90deg);
+        opacity: 1;
     }
-    80%{
-        transform: translateX(-30%) rotate(55deg);
-    }
-    100%{ 
-        transform: translateX(-30%) rotate(90deg);
-    }
+       55% {
+            transform: translate(-30%, -100%) rotate(55deg);
+            opacity: 1;
+        }
+    
+        60% {
+            transform: translate(-30%, -200%) rotate(90deg);
+            opacity: 1;
+        }
+    
+        65% {
+            transform: translate(-30%, -300%) rotate(55deg);
+            opacity: 1;
+        }
+    
+        70% {
+            transform: translate(-30%, -400%) rotate(90deg);
+            opacity: 1;
+        }
+    
+        75% {
+            transform: translate(-30%, -1000%) rotate(55deg);
+            opacity: 1;
+        }  
+        76% {
+            transform: translate(-1000%, -1000%) rotate(0deg); 
+            opacity: 0;           
+        }
+                77% {
+                    transform: translate(-30%, 0) rotate(0deg); 
+                    opacity: 0;
+                }
+        100% {
+            transform: translate(-30%, 0) rotate(0deg);
+            opacity: 1;
+        }
 }
-// @keyframes crabAnimRotate {
-//     0% {
-//         transform: translateX(-30%) rotate(90deg);
-//     }
-
-//     100% {
-//         transform: translateX(30%) rotate(90deg);
-//     }
-// }
 .icon-fish{
     position: absolute;
     top: 20px;
@@ -147,6 +182,24 @@ display: flex;
     position: absolute;
     top: 20px;
     right: 30%;
+    transform: translate(0, 0);
+    // -webkit-transition: all 1s cubic-bezier(0.98, 0.08, 0, 0.73);
+    // transition: all 1s ;
+    animation: jellyfishAnim 8s ease-in-out 0s infinite;
+}
+
+@keyframes jellyfishAnim {
+    0%{
+        transform: translate(0, 0);
+    }
+    25%{transform: translate(50%, 50%);
+    }
+    50%{transform: translate(-50%, -50%);
+    }
+    51%{
+        
+    }
+    75%{transform: translate(0, 0);}
 }
 .icon-octopus{
     position: absolute;
