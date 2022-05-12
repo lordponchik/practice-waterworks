@@ -69,13 +69,15 @@ display: flex;
         font-size: 24px;
         line-height: 1.46;
     background: $btn-bg-color;
+    background-position: top;
+    background-size: 1px;
         color: $secondary-text-color;
 
         &:hover,
         &:focus{
-            background: $accent-color;
-        }
+             background: $primary-text-color; }             
 }
+
 .hero__link{
     display: flex;
     align-items: flex-start;
@@ -90,7 +92,7 @@ display: flex;
         background-clip: text;
         &:hover,
             &:focus {
-                background:linear-gradient(180deg, #322ffc 0%, #1512a5 46.35%, #E146AD 100%);
+                background:$primary-text-color;
             -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
@@ -98,111 +100,8 @@ display: flex;
 }
 .hero__img{
     margin-right: 10px;
-}
-.icon-crab {
-    position: absolute;
-    top: 25%;
-    opacity: 1;
-    transform: translate(-30%, 0) rotate(0deg);    
-    animation: crabAnimRotate 15s ease-in-out 3s infinite;
-}
-@keyframes crabAnimRotate {
-    0%{
-        transform: translate(-30%, 0) rotate(0deg);
-        opacity: 1;
-    }
-    10%{
-        transform: translate(-30%, 0) rotate(45deg);
-        opacity: 1;
-    }
-    20%{
-        transform: translate(-30%, 0) rotate(30deg);
-        opacity: 1;
-    }
-    30%{
-        transform: translate(-30%, 0) rotate(70deg);
-        opacity: 1;
-    }
-    40%{
-        transform: translate(-30%, 0) rotate(55deg);
-        opacity: 1;
-    }
-    50%{ 
-        transform: translate(-30%, 0) rotate(90deg);
-        opacity: 1;
-    }
-       55% {
-            transform: translate(-30%, -100%) rotate(55deg);
-            opacity: 1;
-        }
-    
-        60% {
-            transform: translate(-30%, -200%) rotate(90deg);
-            opacity: 1;
-        }
-    
-        65% {
-            transform: translate(-30%, -300%) rotate(55deg);
-            opacity: 1;
-        }
-    
-        70% {
-            transform: translate(-30%, -400%) rotate(90deg);
-            opacity: 1;
-        }
-    
-        75% {
-            transform: translate(-30%, -1000%) rotate(55deg);
-            opacity: 1;
-        }  
-        76% {
-            transform: translate(-1000%, -1000%) rotate(0deg); 
-            opacity: 0;           
-        }
-                77% {
-                    transform: translate(-30%, 0) rotate(0deg); 
-                    opacity: 0;
-                }
-        100% {
-            transform: translate(-30%, 0) rotate(0deg);
-            opacity: 1;
-        }
-}
-.icon-fish{
-    position: absolute;
-    top: 20px;
-    right: 40px;
-}
-.icon-whale{
-    position: absolute;
-        top: 20%;
-        right: -20%;
-}
-.icon-jellyfish {
-    position: absolute;
-    top: 20px;
-    right: 30%;
-    transform: translate(0, 0);
-    // -webkit-transition: all 1s cubic-bezier(0.98, 0.08, 0, 0.73);
-    // transition: all 1s ;
-    animation: jellyfishAnim 8s ease-in-out 0s infinite;
-}
 
-@keyframes jellyfishAnim {
-    0%{
-        transform: translate(0, 0);
+    .hero__link:hover &{
+filter: brightness(0.5);
     }
-    25%{transform: translate(50%, 50%);
-    }
-    50%{transform: translate(-50%, -50%);
-    }
-    51%{
-        
-    }
-    75%{transform: translate(0, 0);}
-}
-.icon-octopus{
-    position: absolute;
-        bottom: 20px;
-        right: 20%;
 }

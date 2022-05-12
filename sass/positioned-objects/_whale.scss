@@ -1,0 +1,58 @@
+.whale {
+    position: absolute;
+    top: 20%;
+    right: -20%;
+}
+.whale__wrapper{
+    position: relative;
+}
+.whale__wrapper:before{
+    content: '';
+    position: absolute;
+    bottom: 40%;
+    left: -1%;
+    z-index: -1;
+
+    width: 20px;
+    height: 20px;
+
+    border: 3px solid rgb(13, 141, 192);
+    border-radius: 50%;
+
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    animation: whaleAnim 7s cubic-bezier(0.31, 0.31, 0.75, 0.11) infinite;
+}
+.whale__wrapper:after {
+    content: '';
+    position: absolute;
+    bottom: 40%;
+    left: -1%;
+    z-index: -1;
+
+    width: 20px;
+    height: 20px;
+
+    border: 3px solid rgb(15, 155, 211);
+    border-radius: 50%;
+
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    animation: whaleAnim 3s cubic-bezier(0.31, 0.31, 0.75, 0.11) infinite;
+}
+
+@keyframes whaleAnim {
+    0%{transform: translateY(0) scale(0);
+    opacity: 1;}
+        90% {
+            transform: translateY(-500%) scale(1);
+            opacity: 1;
+        }
+                90% {
+                    transform: translateY(-500%) scale(1.10);
+                    opacity: 0.5;
+                }
+    100%{transform: translateY(-500%) scale(1.25);
+    opacity: 0;
+    }
+}

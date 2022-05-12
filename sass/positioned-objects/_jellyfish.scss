@@ -1,0 +1,40 @@
+.jellyfish {
+    position: absolute;
+    top: 10%;
+    right: 30%;
+    transform: translate(0, 0) scale(0.5);
+    opacity: 1;
+    animation: jellyfishAnim 8s cubic-bezier(0.98, 0.08, 0, 0.73) 0s infinite;
+}
+
+@keyframes jellyfishAnim {
+    0% {
+        transform: translate(0, 0) scale(0.5);
+        opacity: 1;
+    }
+
+    75% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+
+    76% {
+        transform: translate(-1000%, -1000%) scale(1);
+        opacity: 0;
+    }
+
+    77% {
+        transform: translate(1000%, 1000%) scale(1);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translate(100%, 100%) scale(0.5);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0, 0) scale(0.5);
+        opacity: 1;
+    }
+}

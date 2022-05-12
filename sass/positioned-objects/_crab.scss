@@ -1,0 +1,81 @@
+.crab {
+    position: absolute;
+    top: 25%;
+    z-index: 1;
+
+    opacity: 1;
+    transform: translate(-30%, 0) rotate(0deg);
+    animation: crabAnim 15s ease-in-out 3s infinite;
+}
+
+@keyframes crabAnim {
+    0% {
+        transform: translate(-30%, 0) rotate(0deg);
+        opacity: 1;
+    }
+
+    10% {
+        transform: translate(-30%, 0) rotate(45deg);
+        opacity: 1;
+    }
+
+    20% {
+        transform: translate(-30%, 0) rotate(30deg);
+        opacity: 1;
+    }
+
+    30% {
+        transform: translate(-30%, 0) rotate(70deg);
+        opacity: 1;
+    }
+
+    40% {
+        transform: translate(-30%, 0) rotate(55deg);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translate(-30%, 0) rotate(90deg);
+        opacity: 1;
+    }
+
+    55% {
+        transform: translate(-30%, -100%) rotate(65deg);
+        opacity: 1;
+    }
+
+    60% {
+        transform: translate(-30%, -200%) rotate(90deg);
+        opacity: 1;
+    }
+
+    65% {
+        transform: translate(-30%, -300%) rotate(65deg);
+        opacity: 1;
+    }
+
+    70% {
+        transform: translate(-30%, -400%) rotate(90deg);
+        opacity: 1;
+    }
+
+    75% {
+        transform: translate(-30%, -1000%) rotate(65deg);
+        opacity: 1;
+    }
+
+    76% {
+        transform: translate(-1000%, -1000%) rotate(0deg);
+        opacity: 0;
+    }
+
+    77% {
+        transform: translate(-30%, 0) rotate(0deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(-30%, 0) rotate(0deg);
+        opacity: 1;
+    }
+}
