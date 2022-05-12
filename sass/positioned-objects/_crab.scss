@@ -70,9 +70,21 @@
     }
 
     77% {
-        transform: translate(-30%, 0) rotate(0deg);
-        opacity: 0;
+        transform: translate(-100%, 0) rotate(0deg);
+        opacity: 1;
     }
+         83% {
+             transform: translate(-75%, 0) rotate(0deg);
+             opacity: 1;
+         }
+                 89% {
+                     transform: translate(-60%, 0) rotate(0deg);
+                     opacity: 1;
+                 }
+                                 95% {
+                                     transform: translate(-45%, 0) rotate(0deg);
+                                     opacity: 1;
+                                 }
 
     100% {
         transform: translate(-30%, 0) rotate(0deg);

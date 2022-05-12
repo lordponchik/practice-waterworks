@@ -2,4 +2,333 @@
     position: absolute;
     top: 20px;
     right: 40px;
+    width: 225px;
+    height: 130px;
 }
+.fish__wrapper{
+    position: relative;
+    width: 100%;
+        height: 100%;
+
+    transform: translate(0) rotate(0);
+}
+.fish:hover .fish__wrapper {
+    animation: fishWrapperAnim 4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1 backwards;
+    transform: translate(-100%) rotate(120deg);
+}
+@keyframes fishWrapperAnim {
+0%{
+transform: translate(0) rotate(0);
+}
+25% {
+transform: translate(-100%) rotate(0);
+}
+50% {
+transform: translate(-100%) rotate(120deg);
+}
+75% {
+transform: translate(-100%) rotate(120deg);
+}
+100% {
+transform: translate(-100%) rotate(120deg);
+}
+}
+.fish__top {
+    position: relative;
+    width: 100%;
+    height: 33%;
+}
+.fish__icon{
+    position: absolute;
+}
+
+.fish__icon__1 {
+    top: 0;
+    left: 0;
+    transform: rotate(10deg);
+    animation: fishAnim1 3s ease-in-out infinite both;
+}
+@keyframes fishAnim1 {
+    0% {
+        transform: rotate(10deg);
+    }
+
+    25% {
+        transform: rotate(30deg);
+    }
+        50% {
+            transform: rotate(10deg);
+        }
+        75% {
+            transform: rotate(30deg);
+        }
+                100% {
+                    transform: rotate(10deg);
+                }
+}
+.fish__icon__2{
+    top: 5%;
+    left: 20%;
+    transform: rotate(20deg);
+    animation: fishAnim2 2s ease-in-out infinite both;
+}
+@keyframes fishAnim2 {
+    0% {
+        transform: rotate(20deg);
+    }
+
+    25% {
+        transform: rotate(40deg);
+    }
+
+    50% {
+        transform: rotate(20deg);
+    }
+
+    75% {
+        transform: rotate(40deg);
+    }
+
+    100% {
+        transform: rotate(20deg);
+    }
+}
+.fish__icon__3 {
+    top: 20%;
+    left: 40%;
+    transform: rotate(35deg);
+    animation: fishAnim3 3s ease-in-out infinite both;
+}
+@keyframes fishAnim3 {
+    0% {
+        transform: rotate(35deg);
+    }
+
+    25% {
+        transform: rotate(55deg);
+    }
+
+    50% {
+        transform: rotate(35deg);
+    }
+
+    75% {
+        transform: rotate(55deg);
+    }
+
+    100% {
+        transform: rotate(35deg);
+    }
+}
+.fish__icon__4{
+    top: 25%;
+    left: 60%;
+    transform: rotate(0deg);
+    animation: fishAnim4 4s ease-in-out infinite both;
+}
+@keyframes fishAnim4 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(20deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(20deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+.fish__middle {
+    position: relative;
+    width: 100%;
+    height: 33%;
+}
+.fish__icon__5 {
+        top: 0;
+        left: 20%;
+        transform: rotate(25deg);
+        animation: fishAnim5 3s ease-in-out infinite both;
+}
+
+@keyframes fishAnim5 {
+    0% {
+        transform: rotate(25deg);
+    }
+
+    25% {
+        transform: rotate(45deg);
+    }
+
+    50% {
+        transform: rotate(25deg);
+    }
+
+    75% {
+        transform: rotate(45deg);
+    }
+
+    100% {
+        transform: rotate(25deg);
+    }
+}
+.fish__icon__6 {
+    top: 5%;
+    left: 40%;
+    transform: rotate(35deg);
+    animation: fishAnim6 2s ease-in-out infinite both;
+}
+
+@keyframes fishAnim6 {
+    0% {
+        transform: rotate(35deg);
+    }
+
+    25% {
+        transform: rotate(55deg);
+    }
+
+    50% {
+        transform: rotate(35deg);
+    }
+
+    75% {
+        transform: rotate(55deg);
+    }
+
+    100% {
+        transform: rotate(35deg);
+    }
+}
+.fish__icon__7 {
+    top: 15%;
+    left: 60%;
+    transform: rotate(20deg);
+    animation: fishAnim7 3s ease-in-out infinite both;
+}
+
+@keyframes fishAnim7 {
+    0% {
+        transform: rotate(20deg);
+    }
+
+    25% {
+        transform: rotate(40deg);
+    }
+
+    50% {
+        transform: rotate(20deg);
+    }
+
+    75% {
+        transform: rotate(40deg);
+    }
+
+    100% {
+        transform: rotate(20deg);
+    }
+}
+.fish__bottom{
+    position: relative;
+    width: 100%;
+    height: 33%;
+}
+.fish__icon__8 {
+         top: 0;
+        left: 40%;
+        transform: rotate(25deg);
+        animation: fishAnim8 2s ease-in-out infinite both;
+}
+
+@keyframes fishAnim8 {
+    0% {
+        transform: rotate(25deg);
+    }
+
+    25% {
+        transform: rotate(45deg);
+    }
+
+    50% {
+        transform: rotate(25deg);
+    }
+
+    75% {
+        transform: rotate(45deg);
+    }
+
+    100% {
+        transform: rotate(25deg);
+    }
+}
+.fish__icon__9 {
+    top: 10%;
+    left: 60%;
+    transform: rotate(35deg);
+    animation: fishAnim9 4s ease-in-out infinite both;
+}
+
+@keyframes fishAnim9 {
+    0% {
+        transform: rotate(35deg);
+    }
+
+    25% {
+        transform: rotate(55deg);
+    }
+
+    50% {
+        transform: rotate(35deg);
+    }
+
+    75% {
+        transform: rotate(55deg);
+    }
+
+    100% {
+        transform: rotate(35deg);
+    }
+}
+.fish__icon__10 {
+    top: 10%;
+    left: 80%;
+    transform: rotate(10deg);
+    animation: fishAnim10 4s ease-in-out infinite both;
+}
+
+@keyframes fishAnim10 {
+    0% {
+        transform: rotate(10deg);
+    }
+
+    25% {
+        transform: rotate(30deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    75% {
+        transform: rotate(30deg);
+    }
+
+    100% {
+        transform: rotate(10deg);
+    }
+}
+// .fish:hover .fish__icon{
+//     animation-play-state: paused;
+// }
+
+// .fish:hover .fish__icon{
+//     // animation-play-state: paused;
+// }
