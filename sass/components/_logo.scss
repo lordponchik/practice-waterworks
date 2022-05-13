@@ -7,6 +7,10 @@
         line-height: 1.08;
         color: inherit;
     text-decoration: none;
+
+    @media screen and (min-width: 1920px) {
+            font-size: 32px;
+        }
 }
 .logo__img{
     margin-right: 5px;

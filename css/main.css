@@ -39,6 +39,11 @@ body {
   color: inherit;
   text-decoration: none;
 }
+@media screen and (min-width: 1920px) {
+  .logo {
+    font-size: 32px;
+  }
+}
 
 .logo__img {
   margin-right: 5px;
@@ -46,6 +51,7 @@ body {
 
 .header {
   position: absolute;
+  width: 100%;
   padding: 50px 55px;
   z-index: 100;
 }
@@ -90,6 +96,11 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+@media screen and (min-width: 1920px) {
+  .site-nav__link {
+    font-size: 32px;
+  }
+}
 
 .hero {
   position: relative;
@@ -100,8 +111,8 @@ body {
 .hero__container::before {
   content: "";
   position: absolute;
-  bottom: 0;
-  left: 0;
+  top: 0;
+  right: 0;
   z-index: -1;
   width: 100%;
   height: 100%;
@@ -109,6 +120,11 @@ body {
   background-position: top right;
   background-repeat: no-repeat;
   background-size: contain;
+}
+@media screen and (min-width: 1440px) {
+  .hero__container::before {
+    height: 80%;
+  }
 }
 .hero__container::after {
   content: "";
@@ -127,7 +143,12 @@ body {
 .hero__content {
   padding-top: 150px;
   padding-left: 150px;
-  width: 440px;
+  width: 40%;
+}
+@media screen and (max-width: 1280px) {
+  .hero__content {
+    width: 50%;
+  }
 }
 
 .hero__title {
@@ -139,10 +160,20 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+@media screen and (min-width: 1920px) {
+  .hero__title {
+    font-size: 72px;
+  }
+}
 
 .hero__text {
   font-size: 20px;
   line-height: 1.7;
+}
+@media screen and (min-width: 1920px) {
+  .hero__text {
+    font-size: 32px;
+  }
 }
 
 .hero__wrapper-btn {
@@ -155,6 +186,7 @@ body {
 }
 
 .hero__btn {
+  min-width: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -182,8 +214,14 @@ body {
 .hero__btn:hover, .hero__btn:focus {
   background: #454545;
 }
+@media screen and (min-width: 1920px) {
+  .hero__btn {
+    font-size: 32px;
+  }
+}
 
 .hero__link {
+  min-width: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -207,6 +245,11 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+@media screen and (min-width: 1920px) {
+  .hero__link {
+    font-size: 32px;
+  }
 }
 
 .hero__img {
@@ -412,6 +455,11 @@ body {
   position: absolute;
   bottom: 20px;
   right: 20%;
+}
+@media screen and (min-width: 1440px) {
+  .octopus {
+    right: 10%;
+  }
 }
 
 .octopus__wrapper {
@@ -1121,6 +1169,11 @@ body {
   position: absolute;
   top: 20%;
   right: -20%;
+}
+@media screen and (min-width: 1440px) {
+  .whale {
+    right: -15%;
+  }
 }
 
 .whale__wrapper {

@@ -2,6 +2,9 @@
     position: absolute;
     bottom: 20px;
     right: 20%;
+    @media screen and (min-width: 1440px) {
+            right: 10%;
+        }
 }
 
 .octopus__wrapper {
