@@ -1,26 +1,37 @@
 .octopus {
     position: absolute;
     bottom: 20px;
-    right: 20%;
+    right: 0;
+    @media screen and (min-width: 1366px){
+        bottom: 20px;
+            right: 20%;
+    }
     @media screen and (min-width: 1440px) {
             right: 10%;
         }
 }
 
 .octopus__wrapper {
-    position: relative;
+    position: relative;    
 }
 
 .octopus__text {
     position: absolute;
     top: 1%;
-    left: -10%;
 
     text-align: center;
 
     border-bottom: 2px dotted $primary-text-color;
     background-color: #fff;
     user-select: none;
+
+    @media screen and (max-width: 1365px){
+        right: 10%;
+    }
+    @media screen and (min-width:1366px){
+        top: 1%;
+            left: -10%;
+    }
 }
 
 .octopus__wrapper::after {
@@ -34,11 +45,9 @@
     background-color: black;
     border-radius: 50%;
     transform: translate(-50%, -250%) scale(1);
-    opacity: 1;
 }
 
 .octopus.touch .octopus__wrapper::after {
-    opacity: 1;
     animation: octopusAnim 5s cubic-bezier(0.98, 0.08, 0, 0.73) 1;
 }
 

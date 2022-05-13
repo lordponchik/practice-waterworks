@@ -1,11 +1,17 @@
 .whale {
-    position: absolute;
-    top: 20%;
-    right: -20%;
+    display: none;
+
+    @media screen and (min-width: 1366px){
+        position: absolute;
+            top: 20%;
+            right: -20%;
+
+            display: block;
+    }   
 
     @media screen and (min-width: 1440px) {
             right: -15%;
-}
+    }
 }
 .whale__wrapper{
     position: relative;
