@@ -1,9 +1,14 @@
 .fish {
     position: absolute;
-    top: 20px;
-    right: 40px;
+    top: 50px;
+    right: 0;
     width: 225px;
     height: 130px;
+    
+    @media screen and (min-width: 1366px){
+        top: 20px;
+        right: 40px;
+    }
 }
 .fish__wrapper{
     position: relative;

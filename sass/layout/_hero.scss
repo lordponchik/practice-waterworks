@@ -41,8 +41,12 @@
     }
 }
 .hero__content{
-    padding-top: 200px;
-    padding-left: 50px;    
+    @media screen and (max-width: 767px){
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);        
+    } 
 
     @media screen and (min-width: 768px) and (max-width: 1280px){
         width: 50%;        
@@ -54,13 +58,17 @@
     }
 }
 .hero__title{
-    font-size: 24px;
-    line-height: 1.28;
-    background: linear-gradient(180deg, #1B18F9 0%, #1B18F9 46.35%, #E146AD 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    display: none;    
 
+    @media screen and (min-width:1366px){
+        display: block;
+        font-size: 24px;
+            line-height: 1.28;
+            background: linear-gradient(180deg, #1B18F9 0%, #1B18F9 46.35%, #E146AD 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+    }
     @media screen and (min-width: 1366px) {
             font-size: 56px;
         }
@@ -110,10 +118,6 @@ display: flex;
         &:hover,
         &:focus{
              background: $primary-text-color; }  
-
-                @media screen and (max-width: 1365px) {
-                    margin-bottom: 10px;
-                }
         @media screen and (min-width: 1366px) {
             margin-right: 25px;
         }
@@ -123,26 +127,31 @@ display: flex;
 }
 
 .hero__link{
-    min-width: 200px;
-    display: flex;
-    align-items: flex-start;
-
-    text-decoration: none;
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 1.29;
-        background: $accent-color;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        transition: background 250ms cubic-bezier(0.19, 1, 0.22, 1);
-
+    display: none;
+    
         &:hover,
         &:focus {
                 background:$primary-text-color;
             -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
+            }
+
+            @media screen and (min-width: 1366px){ 
+                display: block;
+                min-width: 200px;
+                    display: flex;
+                    align-items: flex-start;
+                
+                    text-decoration: none;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 1.29;
+                    background: $accent-color;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    transition: background 250ms cubic-bezier(0.19, 1, 0.22, 1);
             }
                         @media screen and (min-width: 1920px) {
                             font-size: 32px;
